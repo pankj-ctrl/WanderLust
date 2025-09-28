@@ -2,6 +2,10 @@
 
 Wanderlust is a web application that allows users to discover, list, and review unique places to stay around the world. It is inspired by Airbnb and provides a platform for users to find everything from cozy rooms to entire castles.
 
+## Live Demo
+
+You can view a live demo of the website here: [https://wanderlust-a1m5.onrender.com/listings](https://wanderlust-a1m5.onrender.com/listings)
+
 ## Features
 
 * **User Authentication:** Users can sign up and log in to their accounts.
