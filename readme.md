@@ -35,11 +35,11 @@ You can view a live demo of the website here: [https://wanderlust-a1m5.onrender.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/pankj-ctrl/wanderlust.git](https://github.com/pankj-ctrl/wanderlust.git)
+    git clone https://github.com/pankj-ctrl/wanderlust.git
     ```
 2.  **Install dependencies:**
     ```bash
-    npm install
+    npm install --force
     ```
 3.  **Set up environment variables:**
     Create a `.env` file in the root directory and add the following:
@@ -53,6 +53,6 @@ You can view a live demo of the website here: [https://wanderlust-a1m5.onrender.
     ```
 4.  **Start the server:**
     ```bash
-    npm start
+    node app.js
     ```
     The application will be running on `http://localhost:8080`.
