@@ -73,6 +73,20 @@ module.exports.updateListing = async (req, res) => {
     Listing.image = { url, filename };
     await Listing.save();
   }
+
+  // Update geometry if location changed
+  let response = await geocodingClient
+    .forwardGeocode({
+      query: req.body.listing.location,
+      limit: 1,
+    })
+    .send();
+
+  if (response.body.features.length > 0) {
+    Listing.geometry = response.body.features[0].geometry;
+    await Listing.save();
+  }
+
   req.flash("success", "Listing Updated");
   res.redirect(`/listings/${id}`);
 };
